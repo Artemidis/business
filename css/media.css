@@ -1,0 +1,140 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.partners-block .partners-carousel .owl-nav div{
+		left: 0;
+	}
+	.partners-block .partners-carousel .owl-nav .owl-next{
+		right: 0;
+	}
+	.treatment .red-border:before{
+		left: 15px;
+		top: -15px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.about-congress .tabs a{
+		font-size: 12px;
+		padding-bottom: 13px;
+	}
+	.h2{
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.owl-carousel .text:before{
+		display: none;
+	}
+	.analytics .row .image{
+		display: none;
+	}
+	.analytics .row{
+		margin-top: 0;
+	}
+	.schedule .content{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+	.schedule .content ul li strong{
+		max-width: 300px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	.about-congress .tabs a{
+		border: none;
+		border-radius: 0 !important;
+	}
+	.about-congress .tabs a:first-child{
+		border-radius: 5px 5px 0 0 !important;
+	}
+	.about-congress .tabs-content .row .image .red-border{
+		margin-left: 0;
+	}
+	.congress .info span:first-child:after{
+		display: none;
+	}
+	.schedule .content{
+		font-size: 12px;
+		line-height: 19px;
+	}
+	.schedule .content ul li{
+		padding-left: 20px;
+	}
+	.schedule .content ul li strong{
+		max-width: 300px;
+	}
+	.schedule .content ul li .fa{
+		width: 20px;
+		font-size: 12px;
+		top: 4px;
+		margin-left: -20px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.partners i{
+		display: block;
+	}
+	.partners i ins{
+		display: inline-block;
+		margin: 0 15px;
+	}
+	.owl-carousel .owl-nav{
+		padding: 0;
+	}
+	.golden-ball .tabs-content .row h3{
+		font-size: 16px;
+	}
+	.schedule .content ul li{
+		margin-bottom: 8px;
+	}
+	.schedule .content ul li .right{
+		display: block;
+		width: auto;
+		float: none !important;
+	}
+	.schedule .download-pdf{
+		top: 37px;
+	}
+	.schedule .content h4:after{
+		margin-top: -10px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

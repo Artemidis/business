@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'OSans';
+	src: url('../fonts/OpenSans.eot');
+	src: url('../fonts/OpenSans.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans.woff') format('woff'),
+		 url('../fonts/OpenSans.ttf') format('truetype'),
+		 url('../fonts/OpenSans.svg#OSans') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'OSansB';
+	src: url('../fonts/OpenSans-Bold.eot');
+	src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/OpenSans-Bold.woff') format('woff'),
+		 url('../fonts/OpenSans-Bold.ttf') format('truetype'),
+		 url('../fonts/OpenSans-Bold.svg#OSansB') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}
