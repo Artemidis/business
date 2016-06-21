@@ -215,3 +215,47 @@ $(function(){ // добавление суммы в попап
 		popupSum.val(sum);
 	});
 });
+
+$(function() {
+	var popup = $('.popup'), hiddenText;
+
+	window.onkeydown = function(e) {
+		if (e.keyCode === 27) { //escape
+			popup.fadeOut('fast');
+		}
+	};
+	$('body').click(function (e) {
+		if (e.target.className === 'popup-shadow') {
+			popup.fadeOut('fast');
+		}
+	});
+	$('.close').click(function() {
+		popup.fadeOut('fast');
+	});
+
+	var speaker = $('.item', $('.speakers'));
+	var that, oPhoto, oName, oPost, oCompany, oTheme, oText;
+	var iPhoto, iName, iPost, iCompany, iTheme, iText;
+	var popSpeakers = $('.popup-speakers');
+	speaker.click(function() {
+		that = $(this);
+
+		oPhoto = that.find('.photo').attr('src');
+		oName = that.find('.name').text();
+		oPost = that.find('.post').text();
+		oCompany = that.find('.company').text();
+		oTheme = that.find('.theme').text();
+		oText = that.find('.text').html();
+
+		iPhoto = popSpeakers.find('.photo').attr('src', oPhoto);
+		iName = popSpeakers.find('.name').text(oName);
+		iPost = popSpeakers.find('.post').text(oPost);
+		iCompany = popSpeakers.find('.company').text(oCompany);
+		iTheme = popSpeakers.find('.theme').text(oTheme);
+		iText = popSpeakers.find('.text').html(oText);
+
+		popSpeakers.fadeIn('fast')
+			.find('.popup-content')
+			.css('top', parseInt($(window).scrollTop()) - 30 + 'px')
+	});
+});

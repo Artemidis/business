@@ -73,6 +73,15 @@
 		top: 4px;
 		margin-left: -20px;
 	}
+	.popup-content{
+		padding: 41px 30px 30px;
+	}
+	.popup-speakers .grey-border{
+		margin-right: 34px;
+	}
+	.popup-speakers .text{
+		margin-top: 17px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -103,6 +112,12 @@
 	}
 	.schedule .content h4:after{
 		margin-top: -10px;
+	}
+	.popup-speakers .grey-border{
+		display: block;
+	}
+	.popup-speakers .info{
+		display: block;
 	}
 }
 

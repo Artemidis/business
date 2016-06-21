@@ -489,6 +489,48 @@ i.fa
 		&:hover
 			span
 				border-bottom: none
+	.content-min
+		background-color: #fff
+		+box-shadow(0 1px 30px rgba(31,31,31,.17))
+		margin-top: 45px
+		padding: 0 0 9px
+		font-size: 15px
+		line-height: 30px
+		.item
+			margin-bottom: 66px
+		.title
+			text-align: center
+			background-color: #f2f2f2
+			padding: 18px 0 19px
+			margin-bottom: 33px
+			.date
+				font: 22px OSansB, Arial,sans-serif
+				display: inline-block
+				vertical-align: middle
+				margin-right: 33px
+			.address
+				display: inline-block
+				vertical-align: middle
+				font-size: 18px
+				.fa
+					font-size: 20px
+					color: #333
+					margin-right: 9px
+		ul
+			max-width: 525px
+			padding: 0 15px
+			margin: 0 auto
+			li
+				font-size: 18px
+				margin-bottom: 24px
+				strong
+					margin-right: 20px
+				.fa
+					font-size: 19px
+					color: #333
+					margin-right: 9px
+
+
 	.content
 		background-color: #fff
 		+box-shadow(0 1px 30px rgba(31,31,31,.17))
@@ -812,8 +854,20 @@ i.fa
 
 .footer
 	background-color: #d8d8e2
-	padding: 33px 0 36px
-	text-align: center
+	padding: 33px 0 36px 
 	.f-logo
 		img
 			width: 220px
+	.studio
+		float: right
+		a
+			color: #333
+			img
+				display: block
+				float: left
+				margin-right: 15px
+			span
+				display: block
+				float: left
+				line-height: 24px
+				margin-top: -5px

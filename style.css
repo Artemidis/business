@@ -159,6 +159,7 @@ i.fa {
   .speakers .row {
     margin-top: 63px; }
     .speakers .row .item {
+      cursor: pointer;
       margin-bottom: 53px; }
       .speakers .row .item .grey-border {
         position: relative;
@@ -175,7 +176,7 @@ i.fa {
           border: 3px solid #a6a6b4;
           content: "";
           display: block; }
-        .speakers .row .item .grey-border:hover:before {
+        .speakers .row .item:hover .grey-border:before {
           border-color: #be2c37; }
       .speakers .row .item .name {
         font-size: 16px;
@@ -466,6 +467,48 @@ i.fa {
       margin-left: 10px; }
     .schedule .download-pdf:hover span {
       border-bottom: none; }
+  .schedule .content-min {
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 30px rgba(31, 31, 31, 0.17);
+    -moz-box-shadow: 0 1px 30px rgba(31, 31, 31, 0.17);
+    box-shadow: 0 1px 30px rgba(31, 31, 31, 0.17);
+    margin-top: 45px;
+    padding: 0 0 9px;
+    font-size: 15px;
+    line-height: 30px; }
+    .schedule .content-min .item {
+      margin-bottom: 66px; }
+    .schedule .content-min .title {
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 18px 0 19px;
+      margin-bottom: 33px; }
+      .schedule .content-min .title .date {
+        font: 22px OSansB, Arial, sans-serif;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 33px; }
+      .schedule .content-min .title .address {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 18px; }
+        .schedule .content-min .title .address .fa {
+          font-size: 20px;
+          color: #333;
+          margin-right: 9px; }
+    .schedule .content-min ul {
+      max-width: 525px;
+      padding: 0 15px;
+      margin: 0 auto; }
+      .schedule .content-min ul li {
+        font-size: 18px;
+        margin-bottom: 24px; }
+        .schedule .content-min ul li strong {
+          margin-right: 20px; }
+        .schedule .content-min ul li .fa {
+          font-size: 19px;
+          color: #333;
+          margin-right: 9px; }
   .schedule .content {
     background-color: #fff;
     -webkit-box-shadow: 0 1px 30px rgba(31, 31, 31, 0.17);
@@ -788,9 +831,107 @@ i.fa {
 
 .footer {
   background-color: #d8d8e2;
-  padding: 33px 0 36px;
-  text-align: center; }
+  padding: 33px 0 36px; }
   .footer .f-logo img {
     width: 220px; }
+  .footer .studio {
+    float: right; }
+    .footer .studio a {
+      color: #333; }
+      .footer .studio a img {
+        display: block;
+        float: left;
+        margin-right: 15px; }
+      .footer .studio a span {
+        display: block;
+        float: left;
+        line-height: 24px;
+        margin-top: -5px; }
 
-/*# sourceMappingURL=style.css.map */
+
+.popup{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: none;
+  top: 0;
+  z-index: 1000;
+}
+
+.popup-shadow{
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
+}
+
+.popup-content{
+  padding: 61px 80px 50px;
+  height: auto;
+  margin: 5% auto 0;
+  position: relative;
+  background: #fff;
+  z-index: 1000;
+}
+
+.close{
+  display:block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url(img/close.png)no-repeat top center;
+  top: -35px;
+  right: 0px;
+}
+.close:hover{opacity:0.7;}
+
+
+.popup-speakers{
+	line-height: 22px;
+}
+.popup-speakers .grey-border {
+  position: relative;
+  display: block;
+  width: 180px;
+  margin-bottom: 21px;
+  margin-right: 66px;}
+.popup-speakers .grey-border:before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -10px;
+  left: 11px;
+  border: 3px solid #be2c37;
+  content: "";
+  display: block; }
+.popup-speakers .name {
+	font: 20px OSansB, Arial,sans-serif;
+  display: block;
+	line-height: 24px;
+  margin-bottom: 16px; }
+.popup-speakers  .post {
+  display: block;
+  font-size: 14px; }
+.popup-speakers  .company {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 26px; }
+.popup-speakers  .theme{
+	font-family: OSansB;
+}
+.popup-speakers  .text{
+	margin-top: 37px;
+}
+.popup-speakers  .text:before{
+	content: '';
+	display: block;
+	height: 3px;
+	width: 92px;
+	background-color: #be2c37;
+	margin: 0 auto 33px;
+
+}
+.popup-speakers  .text p{
+  margin-bottom: 24px;
+}
